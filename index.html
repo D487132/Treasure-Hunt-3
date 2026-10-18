@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BOOGEYBOTS | Secret Mission</title>
-<style>
+//css 
+<style> 
 body {
   margin: 0;
   background: #101510;
@@ -50,6 +51,7 @@ button {
 </style>
 </head>
 <body>
+//html
 <main>
   <div class="tag">BOOGEYBOTS // CLASSIFIED</div>
   <h1>SECRET MISSION</h1>
@@ -62,12 +64,13 @@ button {
   </form>
   <p id="result" aria-live="polite"></p>
 </main>
+
 <script>
 // missions - intrebarile, q - question, a - array de răspunsuri corecte, w - word
 const missions = {
   1: {
     q: "Ce componentă transformă energia electrică în mișcare?",
-    a: ["motor", "motoare electric", "motorul"],
+    a: ["motor", "motoare electric", "motorul", "motorul electric"],
     w: "ECHIPELE"
   },
   2: {
@@ -116,7 +119,7 @@ const missions = {
     w: "TESTEAZĂ"
   }
 };
-
+//Verificare
 const id = new URLSearchParams(location.search).get("id");
 const mission = missions[id];
 const question = document.getElementById("question");
